@@ -1,5 +1,15 @@
+import os
+
+EXAMPLE_1 = 'a_example.in'
+
 def main():
-    print('Hello World')
+    pwd = os.path.dirname(os.path.realpath(_file_))
+    file = '{}\\{}'.format( pwd, EXAMPLE_1)
+    lst = list(open(file))
+
+    rows, columns, vehicles, rides, bonus, total = lst[ 0 ].split( )
+
+    manager = DrivingManager( rows, columns, vehicles, rides, bonus, total )
 
 
 
